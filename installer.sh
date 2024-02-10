@@ -11,12 +11,16 @@
 # NFO: This device haves the same GPIO-Pin-selection as Model B+ Raspberry Pi !!
 
 
+reset;
 
-echo -n " Console > At first you should enable i2c-devices by using the rasp-config or armbian-config !!"
-
+echo -n "Console > Banana-Pi-M2-Berry OLED-SSD1306-Installer »» (c) by BlackLeakz (blackzspace.de)"
+echo -n "Console > This script will install all necessary dependencies for the OLED-SSD1306-Display on your Banana-Pi-M2-Berry"
+echo -n "Console > This script is for the Banana-Pi-M2-Berry, but it should work on other Banana-Pi's too."
+echo -n "Console > At first you should enable i2c-devices by using the rasp-config or armbian-config !!"
 echo -n "Console > For armbian-config navigate to System, the select Hardware and enable i2c2 & i2c3. REBOOT! "
 
 echo -n "Console > Installing now dependencies..."
+
 
 me=$(whoami)
 if [ "$me" != "root" ]; then
